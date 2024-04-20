@@ -1,13 +1,31 @@
+# Project 2: Blinky-Buzzy Toy
+
 ## Description
 
-This program confirms that at least one periodic interrupt occurs.
+A program that runs different songs and different sequence of leds by pressing
+different buttons.
 
-It (1) sets up P1 to control the LEDS, (2) enables periodic
-interrupts, and then (3) the the periodic interrrupt (repeatedly turns
-on the red LED.
 
-## Suggested Activities
+## Main
 
-* Modify so that different combinations of LEDs are illuminated.
+The main is main.c
 
-* Try to modify the interrupt handler so that an LED flashes on and off quickly (and thereby appears dimmer).
+
+## Run
+
+Enter 'make all' to compile files.
+
+To run the program use: 'make load'
+
+Button S1 plays a sequence of frequencies and lights.
+Button S2 plays a sequence of frequencies and lights.
+Button S3 plays a sequence of frequencies and lights.
+Button S4 plays a sequence of frequencies and lights.
+
+To clean the files: 'make clean'
+
+
+## Bugs
+
+There are no bugs.
+

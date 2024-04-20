@@ -8,7 +8,7 @@ LDFLAGS		= -L/opt/ti/msp430_gcc/include
 CC              = msp430-elf-gcc
 AS              = msp430-elf-as
 
-all: led.elf 
+all: led.elf
 
 #additional rules for files
 led.elf: ${COMMON_OBJECTS} buzzer.o main.o 
@@ -22,6 +22,9 @@ clean:
 	rm -f buzzer.c~
 	rm -f buzzer.h~
 	rm -f Makefile~
+	rm -f main.c~
+	rm -f main.s~
+	rm -f libTimer.h~
 
 main.o: led.h
 
